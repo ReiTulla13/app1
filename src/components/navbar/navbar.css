@@ -1,0 +1,125 @@
+.decor_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 6rem;
+}
+.decor_navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.decor_navbar-links-logo{
+    margin-right: 2rem;
+}
+
+.decor_navbar-links-logo img{
+    width: 62px;
+    height: 62px;
+}
+
+.decor_navbar-links_container{
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    
+}
+.decor_navbar-start{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.decor_navbar-links_container p,
+.decor_navbar-start p,
+.decor_navbar-menu_container p{
+    color: #fff;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.decor_navbar button{
+    width:152px;
+    height: 45px;
+    padding: 0.5rem 1rem;
+    left: 500px;
+    top: 450px;
+    background-color: rgb(32, 32, 48);
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 0.5px;
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.decor_navbar-menu{
+    margin-left: left;
+    display: none;
+    position: relative;
+}
+
+.decor_navbar-menu svg{
+    cursor: pointer;
+}
+.decor_navbar-menu_container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    text-align: end;
+    background: var(--color-footer);
+    padding: 2rem;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0 0 5 rgba(0,0,0,0.2);
+}
+
+.decor_navbar-menu_container p{
+    margin: 1rem 0;
+}
+
+.decor_navbar-menu_container-links button{
+    display: none;
+}
+
+@media screen and (max-width:1050px) {
+    .decor_navbar-links_container{
+        display: none;
+    }
+    .decor_navbar-menu{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .decor_navbar{
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .decor_navbar{
+        padding: 2rem;
+    }
+    .decor_navbar-links_container-button{
+        display: none;
+    }
+    .decor_navbar-menu_container-links {
+        top: 20px;
+    }
+    .decor_navbar-menu_container-links button{
+        display: block;
+    }
+}

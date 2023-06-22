@@ -1,0 +1,126 @@
+.decor_header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.decor_header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.decor_header-content h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 95px;
+    letter-spacing:0.1rem;
+}
+
+.decor_header-content p{
+    font-family:var(--font-family);
+    font-weight: normal;
+    font-style: normal;
+    font-size: 23px;
+    line-height: 23px;
+    color: silver;
+    
+}
+
+.decor_header-content_input{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+
+}
+
+.decor_header-content_input input{
+    background:rgb(32, 30, 29);
+    border: 2px solid rgb(32, 30, 29);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    line-height: 25px;
+    font-size: 20px;
+    color: lightgrey;
+    min-height: 50px;
+    padding: 0 1rem;
+
+    
+}
+
+.decor_header-content_input button{
+    flex: 0.6;
+    width: 100%;
+    min-height: 50px;
+    padding: 01rem;
+    left: 500px;
+    top: 450px;
+    background-color: rgb(32, 32, 48);
+    color: lightgrey;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-style: bold;
+    cursor: pointer;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.decor_header-content_img{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.decor_header-content_img img {
+    min-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and(max-width:1050px) {
+    .decor_header{
+        flex-direction: column;
+    }
+    .decor_header-content{
+        margin: 0 0 3rem;
+    }
+}
+
+@media screen and(max-width:750px) {
+    .decor_header h1{
+        font-size: 48px;
+        line-height: 60px;
+    }
+    .decor_header p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .decor_header-content_input input,
+    .decor_header-content_input button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and(max-width:490px) {
+    .decor_header h1{
+        font-size: 36x;
+        line-height: 45px;
+    }
+    .decor_header p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
